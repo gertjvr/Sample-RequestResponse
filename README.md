@@ -4,4 +4,4 @@ This sample shows a very simple service which handles a request and responds. Th
 
 ## Requirements
 
-This sample using .NET 4.5, MassTransit 3, and RabbitMQ.
+This sample using .NETCoreApp1.1, MassTransit 4, and RabbitMQ.

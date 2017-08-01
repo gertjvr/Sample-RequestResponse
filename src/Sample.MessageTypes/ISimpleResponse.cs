@@ -2,6 +2,16 @@
 {
     public interface ISimpleResponse
     {
-        string CusomerName { get; }
+        string CustomerName { get; }
+    }
+    
+    public class SimpleResponse : ISimpleResponse
+    {
+        public SimpleResponse(string customerName)
+        {
+            CustomerName = customerName;
+        }
+        
+        public string CustomerName { get; }
     }
 }
