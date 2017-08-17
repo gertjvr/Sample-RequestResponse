@@ -59,7 +59,7 @@
 
             try
             {
-                var client = busControl.CreateRequestClient<SimpleRequest, SimpleResponse>(TimeSpan.FromSeconds(10));
+                var client = busControl.CreateRequestClient<ISimpleRequest, ISimpleResponse>(TimeSpan.FromSeconds(10));
 
                 for(;;)
                 {

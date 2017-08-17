@@ -5,9 +5,9 @@
     using MassTransit;
     using MessageTypes;
 
-    public class RequestConsumer : IConsumer<SimpleRequest>
+    public class RequestConsumer : IConsumer<ISimpleRequest>
     {
-        public async Task Consume(ConsumeContext<SimpleRequest> context)
+        public async Task Consume(ConsumeContext<ISimpleRequest> context)
         {
             Log.Information("Returning name for {CustomerId}", context.Message.CustomerId);
 
